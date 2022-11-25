@@ -29,6 +29,9 @@ public class ChiTietDonHang {
     @Column(name = "so_luong")
     private String soLuong;
 
+    @Column(name = "chi_tiet")
+    private String chiTiet;
+
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "san_pham_id", nullable = false)
     private SanPham sanPham;

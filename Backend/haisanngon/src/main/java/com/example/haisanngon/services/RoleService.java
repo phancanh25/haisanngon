@@ -9,18 +9,14 @@ import java.util.List;
 
 @Service
 public class RoleService {
-    @Autowired
     private RoleRepository roleRepository;
+
+    @Autowired
+    public void setRoleRepository(RoleRepository roleRepository) {
+        this.roleRepository = roleRepository;
+    }
 
     public List<Role> listAllList() {
         return roleRepository.findAll();
-    }
-
-    public String testString(){
-        return "Test nha";
-    }
-
-    public Role getRole(Integer id) {
-        return roleRepository.findById(id).get();
     }
 }

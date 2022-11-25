@@ -38,7 +38,7 @@ public class NhanVien {
 
     @Column(name = "gioi_tinh")
     private String gioiTinh;
-//int->String
+
     @Column(name = "cccd")
     private int canCuocCD;
 

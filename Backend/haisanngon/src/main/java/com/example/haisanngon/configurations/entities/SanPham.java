@@ -43,7 +43,7 @@ public class SanPham {
 
     @Column(name = "dieu_kien_gia_si")
     private String dKGiaSi;
-//change name -> id
+
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "loai_san_pham_id", nullable = false)
     private LoaiSanPham loaiSanPham;
