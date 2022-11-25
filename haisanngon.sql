@@ -26,6 +26,7 @@ CREATE TABLE IF NOT EXISTS `chi_tiet_don_hang` (
   `so_luong` int NOT NULL,
   `san_pham_id` int NOT NULL,
   `don_hang_id` int NOT NULL,
+  `chi_tiet` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`chi_tiet_don_hang_id`),
   UNIQUE KEY `idchi_tiet_don_hang_id_UNIQUE` (`chi_tiet_don_hang_id`),
   KEY `fk_don_hang_idx` (`don_hang_id`),
@@ -76,7 +77,7 @@ CREATE TABLE IF NOT EXISTS `khach_hang` (
   `username` varchar(45) NOT NULL,
   `password` varchar(45) NOT NULL,
   `dia_chi` varchar(200) NOT NULL,
-  `so_dien_thoai` int NOT NULL,
+  `so_dien_thoai` varchar(20) NOT NULL,
   PRIMARY KEY (`khach_hang_id`),
   UNIQUE KEY `khach_hang_id_UNIQUE` (`khach_hang_id`),
   UNIQUE KEY `user_name_UNIQUE` (`username`)
@@ -104,7 +105,7 @@ CREATE TABLE IF NOT EXISTS `nhan_vien` (
   `ho_ten` varchar(45) NOT NULL,
   `ngay_sinh` datetime DEFAULT NULL,
   `gioi_tinh` varchar(45) NOT NULL,
-  `cccd` int NOT NULL,
+  `cccd` varchar(20) NOT NULL,
   `dia_chi` varchar(200) NOT NULL,
   `so_dien_thoai` varchar(45) NOT NULL,
   `hinh_anh` varchar(45) NOT NULL,
@@ -141,7 +142,7 @@ CREATE TABLE IF NOT EXISTS `role` (
   UNIQUE KEY `ma_role_UNIQUE` (`ma_role`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table hai_san_ngon.role: ~0 rows (approximately)
+-- Dumping data for table hai_san_ngon.role: ~1 rows (approximately)
 REPLACE INTO `role` (`role_id`, `ma_role`, `ten_role`) VALUES
 	(1, 1, '"Admin"');
 
@@ -155,11 +156,11 @@ CREATE TABLE IF NOT EXISTS `san_pham` (
   `mota_san_pham` varchar(45) DEFAULT NULL,
   `ton_kho` int NOT NULL,
   `dieu_kien_gia_si` int NOT NULL,
-  `loai_san_pham` int DEFAULT NULL,
+  `loai_san_pham_id` int NOT NULL,
   PRIMARY KEY (`san_pham_id`),
   UNIQUE KEY `san_pham_id_UNIQUE` (`san_pham_id`),
-  KEY `fk_loai_san_pham_idx` (`loai_san_pham`),
-  CONSTRAINT `fk_loai_san_pham` FOREIGN KEY (`loai_san_pham`) REFERENCES `loai_san_pham` (`loai_san_pham_id`)
+  KEY `FK8ixkt2s9hxy5bvdgk6g60ewax` (`loai_san_pham_id`),
+  CONSTRAINT `FK8ixkt2s9hxy5bvdgk6g60ewax` FOREIGN KEY (`loai_san_pham_id`) REFERENCES `loai_san_pham` (`loai_san_pham_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table hai_san_ngon.san_pham: ~0 rows (approximately)
