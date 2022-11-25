@@ -10,20 +10,19 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-
 @Entity
 @Getter
 @Setter
-@Table(name = "role")
-public class Role{
+@Table(name = "loai_san_pham")
+public class LoaiSanPham {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "role_id")
-    private Integer roleId;
+    @Column(name = "loai_san_pham_id")
+    private Integer khachHangId;
 
-    @Column(name = "ma_role", unique = true)
-    private Integer maRole;
+    @Column(name = "ma_loai_san_pham", unique = true)
+    private String maLoaiSanPham;
 
-    @Column(name = "ten_role")
-    private String tenRole;
+    @Column(name = "ten_loai_san_pham")
+    private String tenLoaiSanPham;
 }
