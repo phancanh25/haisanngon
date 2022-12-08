@@ -1,6 +1,6 @@
 package com.example.haisanngon.controllers.sanpham;
 
-import com.example.haisanngon.configurations.entities.SanPham;
+import com.example.haisanngon.models.entities.SanPham;
 import com.example.haisanngon.services.SanPhamService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;

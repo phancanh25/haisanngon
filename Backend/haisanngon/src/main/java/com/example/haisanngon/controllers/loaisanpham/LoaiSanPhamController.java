@@ -1,6 +1,6 @@
 package com.example.haisanngon.controllers.loaisanpham;
 
-import com.example.haisanngon.configurations.entities.LoaiSanPham;
+import com.example.haisanngon.models.entities.LoaiSanPham;
 import com.example.haisanngon.services.LoaiSanPhamService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;

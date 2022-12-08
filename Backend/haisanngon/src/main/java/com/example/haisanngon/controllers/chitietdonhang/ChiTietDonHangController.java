@@ -1,7 +1,6 @@
 package com.example.haisanngon.controllers.chitietdonhang;
 
-import com.example.haisanngon.configurations.entities.ChiTietDonHang;
-import com.example.haisanngon.configurations.repositories.ChiTietDonHangRepository;
+import com.example.haisanngon.models.entities.ChiTietDonHang;
 import com.example.haisanngon.services.ChiTietDonHangService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;

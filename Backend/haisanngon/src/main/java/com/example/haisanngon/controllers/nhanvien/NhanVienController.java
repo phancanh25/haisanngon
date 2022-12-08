@@ -1,6 +1,6 @@
 package com.example.haisanngon.controllers.nhanvien;
 
-import com.example.haisanngon.configurations.entities.NhanVien;
+import com.example.haisanngon.models.entities.NhanVien;
 import com.example.haisanngon.services.NhanVienService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;

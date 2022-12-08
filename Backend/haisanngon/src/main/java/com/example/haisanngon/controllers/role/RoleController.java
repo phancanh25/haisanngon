@@ -1,6 +1,6 @@
 package com.example.haisanngon.controllers.role;
 
-import com.example.haisanngon.configurations.entities.Role;
+import com.example.haisanngon.models.entities.Role;
 import com.example.haisanngon.services.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;

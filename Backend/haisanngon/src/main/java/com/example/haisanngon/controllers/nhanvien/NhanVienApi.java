@@ -1,19 +1,27 @@
 package com.example.haisanngon.controllers.nhanvien;
 
-import com.example.haisanngon.configurations.entities.NhanVien;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiResponse;
-import io.swagger.annotations.ApiResponses;
+import com.example.haisanngon.models.entities.NhanVien;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
-@Api(value = "nhanVien", description = "Rest API for nhan vien methods", tags = { "NhanVien", })
+@Tag(name = "nhanVien", description = "Nhan Vien")
 @RequestMapping("/nhanVien")
 public interface NhanVienApi {
+    @Operation(summary = "Nhan Vien", description = "Nhan Vien", tags = {
+            "Nhan Vien",})
     @RequestMapping(value = "/getAllNhanVien", method = RequestMethod.GET, produces = "application/json")
-    @ApiResponses({
-            @ApiResponse(code = 200, message = "OK", response = List.class)})
+    @ApiResponse(responseCode = "200", description = "OK", content = {
+            @Content(
+                    mediaType = "application/json",
+                    schema = @Schema(implementation = List.class)
+            )
+    })
     public List<NhanVien> list();
 }

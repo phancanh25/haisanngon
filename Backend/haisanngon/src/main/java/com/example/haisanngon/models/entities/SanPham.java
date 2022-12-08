@@ -1,4 +1,4 @@
-package com.example.haisanngon.configurations.entities;
+package com.example.haisanngon.models.entities;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,6 +1,7 @@
 package com.example.haisanngon.configurations.repositories;
 
-import com.example.haisanngon.configurations.entities.Role;
+import com.example.haisanngon.models.entities.Role;
+import com.example.haisanngon.models.repositories.RoleRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

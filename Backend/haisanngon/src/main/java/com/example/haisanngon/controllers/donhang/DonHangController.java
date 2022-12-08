@@ -1,7 +1,6 @@
 package com.example.haisanngon.controllers.donhang;
 
-import com.example.haisanngon.configurations.entities.DonHang;
-import com.example.haisanngon.configurations.entities.Role;
+import com.example.haisanngon.models.entities.DonHang;
 import com.example.haisanngon.services.DonHangService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;

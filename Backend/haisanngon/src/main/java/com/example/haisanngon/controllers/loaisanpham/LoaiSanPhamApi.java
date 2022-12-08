@@ -1,19 +1,27 @@
 package com.example.haisanngon.controllers.loaisanpham;
 
-import com.example.haisanngon.configurations.entities.LoaiSanPham;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiResponse;
-import io.swagger.annotations.ApiResponses;
+import com.example.haisanngon.models.entities.LoaiSanPham;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
-@Api(value = "loaiSanPham", description = "Rest API for loai san pham methods", tags = { "LoaiSanPham", })
+@Tag(name = "loaiSanPham", description = "Loai San Pham")
 @RequestMapping("/loaiSanPham")
 public interface LoaiSanPhamApi {
+    @Operation(summary = "loaiSanPham", description = "Loai San Pham", tags = {
+            "LoaiSanPham",})
     @RequestMapping(value = "/getAllLoaiSanPham", method = RequestMethod.GET, produces = "application/json")
-    @ApiResponses({
-            @ApiResponse(code = 200, message = "OK", response = List.class)})
+    @ApiResponse(responseCode = "200", description = "OK", content = {
+            @Content(
+                    mediaType = "application/json",
+                    schema = @Schema(implementation = List.class)
+            )
+    })
     public List<LoaiSanPham> list();
 }

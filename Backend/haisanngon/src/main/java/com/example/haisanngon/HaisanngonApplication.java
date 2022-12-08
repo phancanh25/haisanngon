@@ -16,11 +16,11 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 @EnableAspectJAutoProxy
 @EnableJpaRepositories(
-        basePackages = {"com.example.haisanngon.configurations.repositories"}
+        basePackages = {"com.example.haisanngon.models.repositories"}
 )
-@EntityScan("com.example.haisanngon.configurations.entities")
+@EntityScan("com.example.haisanngon.models.entities")
 @ComponentScan(basePackages = {
-        "com.example.haisanngon.aop","com.example.haisanngon.controllers", "com.example.haisanngon.services", "com.example.haisanngon.configurations.repositories", "com.example.haisanngon.configurations"})
+        "com.example.haisanngon.aop","com.example.haisanngon.models" ,"com.example.haisanngon.controllers", "com.example.haisanngon.services", "com.example.haisanngon.configurations.repositories", "com.example.haisanngon.configurations"})
 @PropertySource({"classpath:/application.properties",})
 public class HaisanngonApplication {
 

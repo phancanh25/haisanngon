@@ -1,7 +1,7 @@
 package com.example.haisanngon.services;
 
-import com.example.haisanngon.configurations.entities.DonHang;
-import com.example.haisanngon.configurations.repositories.DonHangRepository;
+import com.example.haisanngon.models.entities.DonHang;
+import com.example.haisanngon.models.repositories.DonHangRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -11,3 +11,41 @@
     height: 100%;
     width: var(--default-layout-width);
 }
+
+.top-header {
+    height: 30px;
+}
+
+.top-header__link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.top-header__item {
+    padding: 6px;
+    display: block;
+    color: var(--white);
+    font-size: large;
+}
+
+.bottom-header__wrapper {
+    height: 110px;
+    background-color: aquamarine;
+}
+
+.bottom-header__container {
+    background-color: #000;
+    height: 100%;
+}
+
+//
+.bottom-header__itemtittle {
+    display: flex;
+}
+
+.bottom-header__itemtittle span {
+    align-items: center;
+    justify-content: center;
+}

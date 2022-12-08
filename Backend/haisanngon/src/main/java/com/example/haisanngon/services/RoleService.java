@@ -1,7 +1,7 @@
 package com.example.haisanngon.services;
 
-import com.example.haisanngon.configurations.entities.Role;
-import com.example.haisanngon.configurations.repositories.RoleRepository;
+import com.example.haisanngon.models.entities.Role;
+import com.example.haisanngon.models.repositories.RoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

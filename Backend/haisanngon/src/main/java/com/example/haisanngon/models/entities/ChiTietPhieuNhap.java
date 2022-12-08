@@ -1,4 +1,4 @@
-package com.example.haisanngon.configurations.entities;
+package com.example.haisanngon.models.entities;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -16,27 +16,24 @@ import javax.persistence.Table;
 @Entity
 @Getter
 @Setter
-@Table(name = "chi_tiet_don_hang")
-public class ChiTietDonHang {
+@Table(name = "chi_tiet_phieu_nhap")
+public class ChiTietPhieuNhap {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "chi_tiet_don_hang_id")
-    private Integer chiTietDonHangId;
-
-    @Column(name = "gia")
-    private String gia;
+    @Column(name = "chi_tiet_phieu_nhap_id")
+    private Integer chiTietPhieuNhapId;
 
     @Column(name = "so_luong")
-    private String soLuong;
+    private Integer soLuong;
 
-    @Column(name = "chi_tiet")
-    private String chiTiet;
+    @Column(name = "don_vi")
+    private Integer donVi;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "san_pham_id", nullable = false)
     private SanPham sanPham;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "don_hang_id", nullable = false)
-    private DonHang donHang;
+    @JoinColumn(name = "phieu_nhap_id", nullable = false)
+    private PhieuNhap phieuNhap;
 }

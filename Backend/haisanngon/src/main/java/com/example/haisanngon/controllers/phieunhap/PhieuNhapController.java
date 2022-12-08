@@ -1,6 +1,6 @@
 package com.example.haisanngon.controllers.phieunhap;
 
-import com.example.haisanngon.configurations.entities.PhieuNhap;
+import com.example.haisanngon.models.entities.PhieuNhap;
 import com.example.haisanngon.services.PhieuNhapService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;

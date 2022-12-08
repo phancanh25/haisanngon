@@ -1,7 +1,6 @@
 package com.example.haisanngon.controllers.khachhang;
 
-import com.example.haisanngon.configurations.entities.KhachHang;
-import com.example.haisanngon.configurations.entities.Role;
+import com.example.haisanngon.models.entities.KhachHang;
 import com.example.haisanngon.services.KhachHangService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
