@@ -1,7 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9163762-9239-4aa4-8764-16d0f61250c3" name="Changes" comment="" />
+    <list default="true" id="b9163762-9239-4aa4-8764-16d0f61250c3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/configurations/CorsFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/haisanngon/src/main/resources/haisanngon-sanpham.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/haisanngon/src/test/java/com/example/haisanngon/models/persistence/SanPhamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/haisanngon/src/test/java/com/example/haisanngon/utils/DbUnitTestConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/haisanngon/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/haisanngon/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/HaisanngonApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/HaisanngonApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/models/repositories/ChiTietDonHangRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/models/persistence/ChiTietDonHangRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/models/repositories/ChiTietPhieuNhapRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/models/persistence/ChiTietPhieuNhapRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/models/repositories/DonHangRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/models/persistence/DonHangRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/models/repositories/KhachHangRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/models/persistence/KhachHangRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/models/repositories/LoaiSanPhamRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/models/persistence/LoaiSanPhamRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/models/repositories/NhanVienRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/models/persistence/NhanVienRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/models/repositories/PhieuNhapRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/models/persistence/PhieuNhapRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/models/repositories/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/models/persistence/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/models/repositories/SanPhamRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/models/persistence/SanPhamRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/services/ChiTietDonHangService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/services/ChiTietDonHangService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/services/ChiTietPhieuNhapService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/services/ChiTietPhieuNhapService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/services/DonHangService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/services/DonHangService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/services/KhachHangService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/services/KhachHangService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/services/LoaiSanPhamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/services/LoaiSanPhamService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/services/NhanVienService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/services/NhanVienService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/services/PhieuNhapService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/services/PhieuNhapService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/services/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/services/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/services/SanPhamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/haisanngon/src/main/java/com/example/haisanngon/services/SanPhamService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/haisanngon/src/test/java/com/example/haisanngon/HaisanngonApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/haisanngon/src/test/java/com/example/haisanngon/HaisanngonApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/haisanngon/src/test/java/com/example/haisanngon/configurations/repositories/RoleRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/haisanngon/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/haisanngon/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/haisanngon/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/haisanngon/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/haisanngon/src/components/GlobalStyles/GlobalStyles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/haisanngon/src/components/GlobalStyles/GlobalStyles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/haisanngon/src/components/GlobalStyles/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/haisanngon/src/components/Layout/DefaultLayout/DefaultLayout.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/haisanngon/src/components/Layout/DefaultLayout/Sidebar/Sidebar.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/haisanngon/src/components/Layout/DefaultLayout/Sidebar/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/haisanngon/src/components/Layout/DefaultLayout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/haisanngon/src/components/Layout/DefaultLayout/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/haisanngon/src/components/Layout/HeaderOnly/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/haisanngon/src/components/Layout/components/Header/Header.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/haisanngon/src/components/Layout/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/haisanngon/src/components/Layout/components/Header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/haisanngon/src/components/Layout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/haisanngon/src/components/Layout/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/haisanngon/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/haisanngon/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/haisanngon/src/pages/Following/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/haisanngon/src/pages/Home/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/haisanngon/src/pages/Profile/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/haisanngon/src/pages/Search/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/haisanngon/src/pages/Upload/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/haisanngon/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/haisanngon/src/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/haisanngon/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/haisanngon/tailwind.config.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

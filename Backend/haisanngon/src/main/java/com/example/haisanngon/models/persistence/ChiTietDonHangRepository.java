@@ -1,4 +1,4 @@
-package com.example.haisanngon.models.repositories;
+package com.example.haisanngon.models.persistence;
 
 import com.example.haisanngon.models.entities.ChiTietDonHang;
 import org.springframework.data.jpa.repository.JpaRepository;

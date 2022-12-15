@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <san_pham san_pham_id="1" ten_san_pham="testname" don_vi="kg" gia_san_pham="45" anh_san_pham="testanh" mota_san_pham="testmota" ton_kho="100" dieu_kien_gia_si="10" loai_san_pham_id="1"/>
+</dataset>

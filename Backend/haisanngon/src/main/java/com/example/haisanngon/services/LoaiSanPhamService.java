@@ -1,7 +1,7 @@
 package com.example.haisanngon.services;
 
 import com.example.haisanngon.models.entities.LoaiSanPham;
-import com.example.haisanngon.models.repositories.LoaiSanPhamRepository;
+import com.example.haisanngon.models.persistence.LoaiSanPhamRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

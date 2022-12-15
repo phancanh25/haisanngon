@@ -28,13 +28,19 @@ dependencies {
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'com.mysql:mysql-connector-j'
 	annotationProcessor 'org.projectlombok:lombok'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-
 	implementation group: 'io.swagger', name: 'swagger-annotations', version: '1.6.9'
-	testImplementation group: 'junit', name: 'junit', version: '4.4'
-	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 	implementation 'org.springdoc:springdoc-openapi-ui:1.6.11'
+	implementation group: 'org.dbunit', name: 'dbunit', version: '2.5.3'
+	implementation group: 'org.hibernate', name: 'hibernate-entitymanager'//, version: '5.3.7.Final'
+	implementation group: 'org.hibernate', name: 'hibernate-core'
+	implementation group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.0-b170201.1204'
+	//test
+	testImplementation 'com.github.springtestdbunit:spring-test-dbunit:1.2.0'
+	implementation group: 'junit', name: 'junit', version: '4.13.1'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation group: 'org.junit.jupiter', name: 'junit-jupiter-api'
+	implementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine'
+	implementation group: 'org.junit.jupiter', name: 'junit-jupiter-params'
 }
 
 tasks.named('test') {
