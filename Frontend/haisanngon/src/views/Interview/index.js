@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
+import Rightbar from './RightBar';
 function Interview() {
     return (
-        <div>
+        <div className="bg-white">
             <nav
                 class="flex px-5 py-3 text-gray-700 bg-gray-200 border-b border-dashed border-indigo-600 mb-2"
                 aria-label="Breadcrumb"
@@ -33,9 +34,9 @@ function Interview() {
                                 xmlns="http://www.w3.org/2000/svg"
                             >
                                 <path
-                                    fill-rule="evenodd"
+                                    fillRule="evenodd"
                                     d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                                    clip-rule="evenodd"
+                                    clipRule="evenodd"
                                 ></path>
                             </svg>
                             <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
@@ -45,8 +46,25 @@ function Interview() {
                     </li>
                 </ol>
             </nav>
-
-            <span>Interview</span>
+            <div className="flex">
+                <div className="bg-red-200" style={{ width: '1000px', height: '200px' }}>
+                    <span className="font-bold text-xl py-6 block">TUYỂN DỤNG</span>
+                    <div>
+                        <h1>Tuyển Dụng Nhân Viên Social Media Part-time</h1>
+                        <div>
+                            <span> 20 ngõ 28 Nguyễn Khả Trạc, Cầu Giấy, Hà Nội</span>
+                            <span> Bán thời gian</span>
+                            <span> Dưới 6 triệu</span>
+                        </div>
+                        <div>
+                            Lên kế hoạch đăng đăng bài viết ngày cho các mạng xã hội. Phát triển nội dung dựa trên các
+                            trending hiện tại. Tương tác, quản lý thông tin, phản...
+                        </div>
+                        <a>Xem Chi tiết...</a>
+                    </div>
+                </div>
+                <Rightbar />
+            </div>
         </div>
     );
 }

@@ -21,7 +21,7 @@ function BottomHeader() {
         { tittle: 'Liên hệ', path: '/contact' },
     ];
     return (
-        <div id="bot-navbar" className={cx('flex w-full items-center justify-center bg-white')}>
+        <div id="bot-navbar" className={cx('flex w-full items-center justify-center bg-white z-10')}>
             <div
                 className={cx(
                     'text-white flex flex-row h-40 items-center justify-center font-bold text-xl bg-blue-800 w-200',

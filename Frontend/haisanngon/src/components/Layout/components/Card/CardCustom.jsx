@@ -17,7 +17,7 @@ function CardCustom() {
                     <div className={cx('flex w-full h-318 hover:h-322')} key={index}>
                         <div className="max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
                             <a href="!#">
-                                <img alt="product image" className={cx('h-250')} src={product.anhSanPham} />
+                                <img alt="product" className={cx('h-250')} src={product.anhSanPham} />
                             </a>
                             <div className="px-5 pb-5">
                                 <a href="!#">
