@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-function Profile() {
+function Breadcrumb() {
     return (
         <div>
             <nav
-                class="flex px-5 py-3 text-gray-700 bg-gray-200 border-b border-dashed border-indigo-600 mb-2"
+                class="flex px-5 py-3 text-gray-700 bg-gray-200 border-b border-dashed border-indigo-600"
                 aria-label="Breadcrumb"
             >
                 <ol class="inline-flex items-center space-x-1 md:space-x-3">
@@ -39,16 +39,12 @@ function Profile() {
                                 ></path>
                             </svg>
                             <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                                Thông tin doanh nghiêp
+                                Chính sách mua sỉ
                             </span>
                         </div>
                     </li>
                 </ol>
             </nav>
-
-            <span>Profile</span>
         </div>
     );
 }
-
-export default Profile;
