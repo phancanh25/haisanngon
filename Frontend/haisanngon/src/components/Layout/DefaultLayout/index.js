@@ -19,7 +19,6 @@ function DefaultLayout({ children }) {
             } else {
                 navbar.classList.remove('sticky');
             }
-            console.log('1');
         }
         return;
     }, []);

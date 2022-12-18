@@ -1,17 +1,22 @@
 // Pages
 import Home from '~/views/Home';
-import Following from '~/views/Following';
+import Contact from '~/views/Contact';
+import GoodCook from '~/views/GoodCook';
+import Interview from '~/views/Interview';
+import Introduce from '~/views/Introduce';
+import Policy from '~/views/Policy';
 import Profile from '~/views/Profile';
-import Upload from '~/views/Upload';
-import Search from '~/views/Search';
 
 // Public routes
 const publicRoutes = [
     { path: '/', component: Home },
-    { path: '/following', component: Following },
+    { path: '/contact', component: Contact },
+    { path: '/goodcook', component: GoodCook },
+    { path: '/interview', component: Interview },
+    { path: '/introduce', component: Introduce },
+    { path: '/policy', component: Policy },
     { path: '/profile', component: Profile },
-    { path: '/upload', component: Upload },
-    { path: '/search', component: Search, layout: null },
+    // { path: '/search', component: Search, layout: null },
 ];
 
 const privateRoutes = [];

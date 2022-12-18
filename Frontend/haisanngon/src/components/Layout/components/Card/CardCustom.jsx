@@ -8,7 +8,6 @@ function CardCustom() {
     const products = useSelector(productState);
     useEffect(() => {
         dispatch(fetchUsers(products, 'products/fetchProducts'));
-        console.log('1');
         return;
     }, []);
     console.log(products);
