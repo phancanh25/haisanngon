@@ -1,6 +1,6 @@
-package com.example.haisanngon.controllers.nhanvien;
+package com.example.haisanngon.controllers.user;
 
-import com.example.haisanngon.models.entities.NhanVien;
+import com.example.haisanngon.models.entities.User;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -13,7 +13,7 @@ import java.util.List;
 
 @Tag(name = "nhanVien", description = "Nhan Vien")
 @RequestMapping("/nhanVien")
-public interface NhanVienApi {
+public interface UserApi {
     @Operation(summary = "Nhan Vien", description = "Nhan Vien", tags = {
             "Nhan Vien",})
     @RequestMapping(value = "/getAllNhanVien", method = RequestMethod.GET, produces = "application/json")
@@ -23,5 +23,5 @@ public interface NhanVienApi {
                     schema = @Schema(implementation = List.class)
             )
     })
-    public List<NhanVien> list();
+    public List<User> list();
 }

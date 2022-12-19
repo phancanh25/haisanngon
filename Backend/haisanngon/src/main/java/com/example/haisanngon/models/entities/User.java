@@ -5,30 +5,47 @@ import lombok.Setter;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import java.time.LocalDateTime;
 
 @Entity
 @Getter
 @Setter
-@Table(name = "khach_hang")
-public class KhachHang {
+@Table(name = "nhan_vien")
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "khach_hang_id")
-    private Integer khachHangId;
+    @Column(name = "user_id")
+    private Integer userId;
 
-    @Column(name = "username", unique = true)
+    @Column(name = "username")
     private String userName;
 
     @Column(name = "password")
     private String passWord;
 
+    @Column(name = "ho_ten")
+    private String hoTen;
+
+    @Column(name = "ngay_sinh")
+    private LocalDateTime ngaySinh;
+
+    @Column(name = "gioi_tinh")
+    private String gioiTinh;
+
     @Column(name = "dia_chi")
     private String diaChi;
-//int->String
+
     @Column(name = "so_dien_thoai")
     private String soDienThoai;
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "role_id", nullable = false)
+    private Role role;
 }

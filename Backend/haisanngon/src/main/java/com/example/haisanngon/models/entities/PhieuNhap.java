@@ -27,6 +27,6 @@ public class PhieuNhap {
     private String chiTiet;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "nhan_vien_id", nullable = false)
-    private NhanVien nhanVien;
+    @JoinColumn(name = "user_id", nullable = false)
+    private User user;
 }
