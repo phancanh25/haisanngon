@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
-@Tag(name = "nhanVien", description = "Nhan Vien")
-@RequestMapping("/nhanVien")
+@Tag(name = "user", description = "Nhan Vien")
+@RequestMapping("/user")
 public interface UserApi {
-    @Operation(summary = "Nhan Vien", description = "Nhan Vien", tags = {
-            "Nhan Vien",})
-    @RequestMapping(value = "/getAllNhanVien", method = RequestMethod.GET, produces = "application/json")
+    @Operation(summary = "get all user", description = "get all user", tags = {
+            "get all user",})
+    @RequestMapping(value = "/getAllUser", method = RequestMethod.GET, produces = "application/json")
     @ApiResponse(responseCode = "200", description = "OK", content = {
             @Content(
                     mediaType = "application/json",

@@ -25,10 +25,10 @@ public class User {
     private Integer userId;
 
     @Column(name = "username")
-    private String userName;
+    private String username;
 
     @Column(name = "password")
-    private String passWord;
+    private String password;
 
     @Column(name = "ho_ten")
     private String hoTen;

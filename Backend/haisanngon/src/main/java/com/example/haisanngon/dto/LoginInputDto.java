@@ -12,6 +12,6 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 public class LoginInputDto {
-    private String userName;
+    private String username;
     private String password;
 }

@@ -12,7 +12,7 @@ public class UserService {
     private UserRepository userRepository;
 
     @Autowired
-    public void setNhanVienRepository(UserRepository userRepository) {
+    public void setUserRepository(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
@@ -25,6 +25,6 @@ public class UserService {
     }
 
     public User getUserByNameAndPassword(String userName, String passWord){
-        return userRepository.findByUserName(userName);
+        return userRepository.findByUsernameAndPassword(userName,passWord);
     }
 }
