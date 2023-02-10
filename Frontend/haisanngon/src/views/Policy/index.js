@@ -47,7 +47,7 @@ function Policy() {
                 </ol>
             </nav>
 
-            <span>Policy</span>
+            <span>Chính sách khi quý khách mua với đơn hàng trên 10kg sẽ được chiết khấu 2%-5% tùy từng mặt hàng</span>
         </div>
     );
 }
