@@ -1,17 +1,17 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const USERS_URL = 'http://localhost:8082/haisanngon/sanPham/getAllSanPham';
+const USERS_URL = 'http://localhost:8082/haisanngon/login/signin';
 
 const initialState = [];
 
 export const fetchUsers = createAsyncThunk('products/fetchProducts', async () => {
-    const response = await axios.get(USERS_URL);
+    const response = await axios.post(USERS_URL);
     return response.data;
 });
 
-const ProductSlice = createSlice({
-    name: 'products',
+const SignInSlice = createSlice({
+    name: 'signin',
     initialState,
     reducers: {},
     extraReducers(builder) {
@@ -22,4 +22,4 @@ const ProductSlice = createSlice({
 });
 
 export default ProductSlice.reducer;
-export const productState = (state) => state.products; //sau dấu chấm là tên biến của store
+export const productState = (state) => state.products;

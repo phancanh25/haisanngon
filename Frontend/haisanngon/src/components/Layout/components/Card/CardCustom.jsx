@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { productState, fetchUsers } from '~/store/product/productSlice';
+import { productState, fetchUsers } from '~/store/product/ProductSlice';
 import { useEffect } from 'react';
 import classNames from 'classnames';
 const cx = classNames.bind();
