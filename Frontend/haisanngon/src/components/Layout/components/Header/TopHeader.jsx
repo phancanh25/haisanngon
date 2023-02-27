@@ -22,7 +22,7 @@ function TopHeader() {
                 <div className="pr-4" onClick={() => setSignInStatus(!signInStatus)}>
                     Đăng nhập
                 </div>
-                {signInStatus ? <SignUpForm /> : <SignInForm />}
+                {signInStatus ? <SignInForm /> : <SignUpForm />}
                 <div>Đăng ký</div>
             </div>
         </div>

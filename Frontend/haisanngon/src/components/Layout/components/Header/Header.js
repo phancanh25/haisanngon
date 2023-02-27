@@ -34,7 +34,7 @@ function Header() {
                                 >
                                     1
                                 </span>
-                                <ShoppingCartIcon style={{ width: '30px', height: '30px', color: 'white' }} />
+                                <ShoppingCartIcon style={{ width: '30px', height: '30px', color: 'white', margin: "10px" }} />
                             </div>
                         </div>
                     </div>

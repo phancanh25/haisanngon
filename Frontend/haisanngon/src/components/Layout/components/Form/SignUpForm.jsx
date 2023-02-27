@@ -127,7 +127,7 @@ function SignUpForm() {
                                             Remember me
                                         </label>
                                     </div>
-                                    <a href="#" className="text-sm text-blue-700 hover:underline dark:text-blue-500">
+                                    <a href="!#" className="text-sm text-blue-700 hover:underline dark:text-blue-500">
                                         Quên mật khẩu ?
                                     </a>
                                 </div>
@@ -139,7 +139,7 @@ function SignUpForm() {
                                 </button>
                                 <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
                                     Bạn chưa đăng ký?{' '}
-                                    <a href="#" className="text-blue-700 hover:underline dark:text-blue-500">
+                                    <a href="!#" className="text-blue-700 hover:underline dark:text-blue-500">
                                         Tạo tài khoản mới
                                     </a>
                                 </div>

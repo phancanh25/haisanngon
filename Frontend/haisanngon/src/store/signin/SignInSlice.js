@@ -3,9 +3,9 @@ import axios from 'axios';
 
 const USERS_URL = 'http://localhost:8082/haisanngon/login/signin';
 
-const initialState = [];
+const initialState = {data: [], isLogged: false}
 
-export const fetchUsers = createAsyncThunk('products/fetchProducts', async () => {
+export const fetchUsers = createAsyncThunk('login/signin', async () => {
     const response = await axios.post(USERS_URL);
     return response.data;
 });
