@@ -1,10 +1,21 @@
 import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import SignInSlice, { signin, SignInState } from '~/store/signin/SignInSlice';
 
 function SignInForm() {
     const [data, setData] = useState({
         username: '',
         password: '',
     });
+
+    const dispatch = useDispatch();
+
+    const singin = useSelector(SignInState);
+
+    // useEffect(() => {
+    //     dispatch(signin(singin, 'login/signin'));
+    //     return;
+    // }, []);
     // const [errorMessages, setErrorMessages] = useState({});
     // const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -20,6 +31,8 @@ function SignInForm() {
         //         secondParam: 'yourOtherValue',
         //     }),
         // });
+        dispatch(signin(data));
+        // dispatch(signin(singin, 'login/signin', data));
         console.log(data);
         event.preventDefault();
     };
@@ -68,7 +81,7 @@ function SignInForm() {
                                     </label>
                                     <input
                                         onChange={(e) => handle(e)}
-                                        type="username"
+                                        type="text"
                                         name="username"
                                         id="username"
                                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
@@ -101,7 +114,6 @@ function SignInForm() {
                                                 type="checkbox"
                                                 value=""
                                                 className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-600 dark:border-gray-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
-                                                required
                                             />
                                         </div>
                                         <label

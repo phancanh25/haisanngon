@@ -3,10 +3,10 @@ import axios from 'axios';
 
 const USERS_URL = 'http://localhost:8082/haisanngon/login/signin';
 
-const initialState = {data: [], isLogged: false}
+const initialState = {};
 
-export const fetchUsers = createAsyncThunk('login/signin', async () => {
-    const response = await axios.post(USERS_URL);
+export const signin = createAsyncThunk('login/signin', async ({ username, password }) => {
+    const response = await axios.post(USERS_URL, { username, password });
     return response.data;
 });
 
@@ -15,11 +15,12 @@ const SignInSlice = createSlice({
     initialState,
     reducers: {},
     extraReducers(builder) {
-        builder.addCase(fetchUsers.fulfilled, (state, action) => {
-            return action.payload;
+        builder.addCase(signin.fulfilled, (state, action) => {
+            console.log(action.payload);
+            // return action.payload;
         });
     },
 });
 
-export default ProductSlice.reducer;
-export const productState = (state) => state.products;
+export default SignInSlice.reducer;
+export const SignInState = (state) => state.signin;
