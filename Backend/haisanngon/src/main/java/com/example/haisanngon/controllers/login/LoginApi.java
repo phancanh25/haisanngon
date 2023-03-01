@@ -1,8 +1,11 @@
 package com.example.haisanngon.controllers.login;
 
 import com.example.haisanngon.dto.LoginInputDto;
+import com.example.haisanngon.dto.response.ErrorResponse;
+import com.example.haisanngon.exception.HSNException;
 import com.example.haisanngon.models.entities.User;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.ArraySchema;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -36,5 +39,24 @@ public interface LoginApi {
                     schema = @Schema(implementation = List.class)
             )
     })
-    public ResponseEntity<?> loginUser(@RequestBody LoginInputDto loginInputDto);
+    @ApiResponse(responseCode = "400", description = "Bad Request", content = {
+            @Content(
+                    mediaType = "application/json",
+                    array = @ArraySchema(schema = @Schema(implementation = ErrorResponse.class))
+            )
+    })
+    @ApiResponse(responseCode = "422", description = "Unprocessable Entity", content = {
+            @Content(
+                    mediaType = "application/json",
+                    array = @ArraySchema(schema = @Schema(implementation = ErrorResponse.class))
+            )
+    })
+    @ApiResponse(responseCode = "500", description = "Internal Server Error", content = {
+            @Content(
+
+                    mediaType = "application/json",
+                    array = @ArraySchema(schema = @Schema(implementation = ErrorResponse.class))
+            )
+    })
+    public ResponseEntity<?> loginUser(@RequestBody LoginInputDto loginInputDto) throws HSNException;
 }

@@ -13,9 +13,7 @@ import java.util.Map;
 public class JwtGeneratorImpl implements JwtGeneratorInterface{
     @Value("${jwt.secret}")
     private String secret;
-    @Value("${app.jwttoken.message}")
-    private String message;
-
+    public static String message = "Đăng nhập thành công";
     @Override
     public Map<String, String> generateToken(LoginInputDto loginInputDto) {
         String jwtToken="";

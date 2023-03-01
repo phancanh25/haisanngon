@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import SignInSlice, { signin, SignInState } from '~/store/signin/SignInSlice';
+import { useDispatch } from 'react-redux';
+import { signin } from '~/store/signin/SignInSlice';
 
 function SignInForm() {
     const [data, setData] = useState({
@@ -10,7 +10,7 @@ function SignInForm() {
 
     const dispatch = useDispatch();
 
-    const singin = useSelector(SignInState);
+    // const singin = useSelector(SignInState);
 
     // useEffect(() => {
     //     dispatch(signin(singin, 'login/signin'));
@@ -20,20 +20,7 @@ function SignInForm() {
     // const [isSubmitted, setIsSubmitted] = useState(false);
 
     const handleSubmit = (event) => {
-        // fetch('https://mywebsite.com/endpoint/', {
-        //     method: 'POST',
-        //     headers: {
-        //         Accept: 'application/json',
-        //         'Content-Type': 'application/json',
-        //     },
-        //     body: JSON.stringify({
-        //         firstParam: pass,
-        //         secondParam: 'yourOtherValue',
-        //     }),
-        // });
         dispatch(signin(data));
-        // dispatch(signin(singin, 'login/signin', data));
-        console.log(data);
         event.preventDefault();
     };
 
